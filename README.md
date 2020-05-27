@@ -1,25 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Message-Me
 
-Things you may want to cover:
+## Description
+Message-Me is a Ruby on Rails web application that offers real time chat capabilities to logged in users.
 
-* Ruby version
-  
-* System dependencies
-  
-* Configuration
-  Test
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# message-me
+## Features
+* Authentication
+* Real time broadcast
+* Recognize keyboard events to submit Messages
