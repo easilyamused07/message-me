@@ -14,3 +14,28 @@
     display: none;
   }	  
 }
+
+#signup-box {
+  height: 500px;
+  width: 600px;
+  border: 3px solid #555;
+  position: left;
+}
+
+.h1 {
+  text-align: center !important;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.bg-img{
+   background-image: url('/assets/network.png');
+   height: 1000px;
+   width: 1200px;
+}
+
+.errors{
+  background-color: DarkRed;
+  color: white;
+
+}
