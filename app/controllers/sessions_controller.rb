@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
       flash[:success] = "Welcome " + user.username + "!"
-      redirect_to root_path
+      redirect_to chatroom_path
     else
       flash.now[:error] = "Please enter valid username and password."
       render 'new'
@@ -27,7 +27,7 @@ class SessionsController < ApplicationController
   def logged_in_redirect
     if logged_in?
       flash[:error] = "You are already logged in."
-      redirect_to root_path
+      redirect_to chatroom_path
     end
   end
   
