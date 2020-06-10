@@ -4,14 +4,14 @@
 </h2>
 
 <div class="ui middle aligned divided list">
-  <% @users.each do |friend| %>
+  <% @friendships.each do |friend| %>
   <div class="item">
     <div class="right floated content">
       <div class="ui button">Add</div>
     </div>
     <%=  %>
     <div class="content">
-      <%= user.username %>
+      <%= friend.username %>
     </div>
   </div>
   <% end %>

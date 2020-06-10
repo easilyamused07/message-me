@@ -2,7 +2,9 @@ class FriendshipsController < ApplicationController
   before_action :require_user
 
   def index
-    @friendships = Friendship.all
+  end
+
+  def show
   end
 
   def create
@@ -11,12 +13,12 @@ class FriendshipsController < ApplicationController
       flash[:notice] = "Added friend"
       redirect_to friends_path
     else
-      flash[:error] = "Error occured when adding friend. Try again."
-      redirect_to friends_path
+      flash[:error] = "An error occured when adding friend"
+      redirect_to users_path
     end
   end
 
-  def destory
+  def destroy
     @friendship = current_user.friendships.find(params[:id])
     @friendship.destroy
     flash[:notice] = "Friend was removed"
