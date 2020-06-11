@@ -4,6 +4,7 @@
 </h2>
 
 <div class="ui middle aligned divided list">
+  <% f = @user.friendships + @user.inverse_friends %>
   <% for friendship in @user.friendships %>
   <div class="item">
     <div class="right floated content">
@@ -17,3 +18,4 @@
   </div>
   <% end %>
 </div>
+
