@@ -37,5 +37,10 @@
 .errors{
   background-color: DarkRed;
   color: white;
+}
 
+div[name="username_txt"] {
+  color: black;
+  font-family: "Lucida Console", Courier, serif;
+  font-weight: bold;
 }

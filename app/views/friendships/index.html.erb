@@ -4,16 +4,14 @@
 </h2>
 
 <div class="ui middle aligned divided list">
-  <% @users.each do |user| %>
+  <% @friendships.each do |friend| %>
   <div class="item">
     <div class="right floated content">
-      <div>
-        <%= link_to 'Add Friend', friendships_path(:friend_id => user), :method => :post, class: "ui button" %>
-      </div>  
+      <div class="ui button">Add</div>
     </div>
     <%=  %>
-    <div class="content" name= "username_txt">
-      <%= user.username %>
+    <div class="content">
+      <%= friend.username %>
     </div>
   </div>
   <% end %>
